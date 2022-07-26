@@ -1,0 +1,13 @@
+{
+  "name": "game-jam",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "asc --target release",
+    "build:debug": "asc --target debug",
+    "web": "npm run build && w4 run build/cart.wasm",
+    "native": "npm run build && w4 run-native build/cart.wasm"
+  },
+  "devDependencies": {
+    "assemblyscript": "^0.20.14"
+  }
+}
